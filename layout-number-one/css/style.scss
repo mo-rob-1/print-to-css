@@ -1,0 +1,134 @@
+/* Fonts */
+$fontOne: 'Fjalla One', sans-serif;
+$fontTwo: 'Ibarra Real Nova', serif;
+
+/* Colors */
+$page2-background: #f0efeb;
+$textPink: #eda08d;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+/* Page 1 */
+.page-1 {
+    background-image: url('/images/skateboarding.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.89);
+    font-family: $fontOne;
+    position: relative;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        padding: 3rem;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    &__text-container {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__heading {
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 10px solid rgba(255, 255, 255, 0.89);
+        font-size: 5rem;
+        line-height: 8rem;
+    }
+    &__sub-heading {
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    &__pg-number {
+        letter-spacing: 2px;
+    }
+}
+
+/* Page 2 */
+.page-2 {
+    background-color: $page2-background;
+    padding: 1.5rem;
+    @media screen and (min-width: 768px) {
+        padding: 3rem;
+    }
+    &__article {
+        @media screen and (min-width: 1024px) {
+            padding: 3rem;
+        }
+        @media screen and (min-width: 1440px) {
+            padding: 5rem;
+        }
+        @media screen and (min-width: 1920px) {
+            padding: 7rem;
+        }
+    }
+    &__article-paragraphs-container {
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 0px;
+        }
+    }
+    &__article-paragraph {
+        font-family: $fontTwo;
+        line-height: 1.5;
+    }
+    &__sub-heading,
+    &__article-heading,
+    &__article-part,
+    &__pg-number {
+        font-family: $fontOne;
+    }
+    &__article-author {
+        font-family: $fontTwo;
+        color: $textPink;
+    }
+    &__article-heading {
+        letter-spacing: 4px;
+    }
+    &__article-heading,
+    &__sub-heading,
+    &__article-part {
+        text-transform: uppercase;
+    }
+    &__sub-heading,
+    &__pg-number {
+        letter-spacing: 2px;
+    }
+    &__sub-heading {
+        margin: 0;
+    }
+}
+
+span {
+    color: $textPink;
+}

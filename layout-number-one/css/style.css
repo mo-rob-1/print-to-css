@@ -1,0 +1,171 @@
+/* Fonts */
+/* Colors */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+/* Page 1 */
+.page-1 {
+  background-image: url("/images/skateboarding.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.89);
+  font-family: "Fjalla One", sans-serif;
+  position: relative;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .page-1 {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-1 {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
+  }
+}
+
+.page-1__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.page-1__heading {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.89);
+  font-size: 5rem;
+  line-height: 8rem;
+}
+
+.page-1__sub-heading {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.page-1__pg-number {
+  letter-spacing: 2px;
+}
+
+/* Page 2 */
+.page-2 {
+  background-color: #f0efeb;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .page-2 {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-2__article {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .page-2__article {
+    padding: 5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .page-2__article {
+    padding: 7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-2__article-paragraphs-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+}
+
+.page-2__article-paragraph {
+  font-family: "Ibarra Real Nova", serif;
+  line-height: 1.5;
+}
+
+.page-2__sub-heading, .page-2__article-heading, .page-2__article-part, .page-2__pg-number {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.page-2__article-author {
+  font-family: "Ibarra Real Nova", serif;
+  color: #eda08d;
+}
+
+.page-2__article-heading {
+  letter-spacing: 4px;
+}
+
+.page-2__article-heading, .page-2__sub-heading, .page-2__article-part {
+  text-transform: uppercase;
+}
+
+.page-2__sub-heading, .page-2__pg-number {
+  letter-spacing: 2px;
+}
+
+.page-2__sub-heading {
+  margin: 0;
+}
+
+span {
+  color: #eda08d;
+}
+/*# sourceMappingURL=style.css.map */
