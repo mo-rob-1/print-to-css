@@ -1,0 +1,224 @@
+/* Fonts */
+$fontRetro: 'Abril Fatface', cursive;
+$fontPrimary: 'Aldrich', sans-serif;
+$fontSecondary: 'Zilla Slab', serif;
+$fontDesc: 'Ibarra Real Nova', serif;
+
+/* Colors */
+$yellow:#e0c161;
+$red: #ec5b48;
+$black: #222;
+$white: #fff;
+
+/* Other Variables */
+$textShadow: 2px 2px $black;
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+/* Page 1 */
+.page-1 {
+    background-image: url('/images/vintage-car.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+    padding: 1.2rem;
+    position: relative;
+    &__heading,
+    &__sub-heading {
+        font-family: $fontPrimary;
+        text-shadow: $textShadow;
+        text-transform: uppercase;
+    }
+    &__heading {
+        margin: 0;
+        color: $white;
+    }
+    &__heading-container {
+        @media screen and (min-width: 1024px) {
+            max-width: 90%;
+        }
+    }
+    &__sub-heading {
+        color: $white;
+    }
+    &__desc {
+        font-family: $fontSecondary;
+        font-size: 1.2rem;
+        color: $white;
+        width: 80%;
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 2560px) {
+            font-size: 1.8rem;
+        }
+    }
+    &__desc-container {
+        position: absolute;
+        text-shadow: $textShadow;
+        bottom: 0;
+        left: 0;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        @media screen and (min-width: 1024px) {
+            position: initial;
+            padding-left: 0;
+            padding-right: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 8px;
+            grid-row-gap: 0px;
+        }
+    }
+    &__desc--yellow {
+        color: $yellow;
+    }
+    &__text-container {
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        @media screen and (min-width: 2560px) {
+            font-size: 1.8rem;
+        }
+    }
+    &__heading--era-yellow {
+        color: $yellow;
+    }
+}
+
+/* Page 2 */
+.page-2 {
+    background-color: $yellow;
+    padding: 1.2rem;
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+    }
+    @media screen and (min-width: 1920px) {
+        grid-column-gap: 0px;
+    }
+    &__retro {
+        margin: 0;
+        color: $white;
+        font-family: $fontPrimary;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        @media screen and (min-width: 1024px) {
+            text-align: left;
+        }
+    }
+    &__title {
+        font-family: $fontSecondary;
+        color: $white;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+    &__info {
+        color: $black;
+        font-family: $fontSecondary;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+    &__retro,
+    &__title,
+    &__info {
+        @media screen and (min-width: 1920px) {
+            width: 70%;
+        }
+    }
+    &__year {
+        color: $red;
+        font-family: $fontRetro;
+        font-size: 12rem;
+        line-height: 1;
+        text-align: center;
+        margin: 0;
+        text-shadow: $textShadow;
+        @media screen and (min-width: 1440px) {
+            font-size: 16rem;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18rem;
+        }
+        @media screen and (min-width: 2560px) {
+            font-size: 22rem;
+        }
+    }
+    &__desc {
+        color: $black;
+        font-family: $fontDesc;
+        line-height: 1.5;
+        @media screen and (min-width: 1920px) {
+            font-size: 1.1rem;
+        }
+        @media screen and (min-width: 2560px) {
+            font-size: 1.4rem;
+        }
+    }
+    &__first-letter {
+        float: left;
+        font-size: 75px;
+        line-height: 60px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+        font-weight: bold;
+        text-shadow: $textShadow;
+    }
+    &__col-1 {
+        @media screen and (min-width: 1920px) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media screen and (min-width: 2560px) {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+small {
+    font-family: $fontPrimary;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media screen and (min-width: 1024px) {
+        align-items: flex-start;
+        justify-content: left;
+    }
+    @media screen and (min-width: 2560px) {
+        font-size: 1.4rem;
+    }
+}
+span {
+    color: $red;
+}
