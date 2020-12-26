@@ -5,3 +5,5 @@ Overview: I am a big admirer of magazine & print layouts; everything from the ty
 
 ## Layouts:
 [Layout Number One](https://layout-number-one.netlify.app/)
+
+[Layout Number Two](https://layout-number-two.netlify.app/)
